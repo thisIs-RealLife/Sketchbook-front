@@ -1,0 +1,27 @@
+.example-form-field{
+
+}
+p{
+  font-size: 16px;
+}
+
+
+form{
+  width: 400px;
+}
+
+.but2{
+  margin-left: 60px;
+}
+mat-form-field{ width: 100%;}
+
+.spinner{
+  margin-top: 50px;
+  width: 400px;
+  position: absolute;
+  z-index: 99999;
+}
+
+.black{
+  background: aqua;
+}

@@ -1,0 +1,66 @@
+table{
+  height: 100%;
+  border-radius: 10px 10px 0 0 ;
+  color: black;
+  background-color: white;
+  width: 100%;
+  overflow: auto;
+}
+textarea{
+  width: 100%;
+  color: black;
+  background: none;
+  font-size: 18px;
+  overflow: hidden;
+  padding: 0 0 20px 0;
+}
+th{
+  font-size: 20px;
+  padding: 20px 10px 0 20px;
+}
+.tool_text{
+  font-size: 15px;
+  padding: 5px;
+}
+.custom-checkbox{
+  border-radius: 20px;
+}
+.tool_add_btn{
+  width: 2%;
+}
+
+.my_checkbox{
+  margin-left: 12px;
+}
+.head_table{
+
+  border-bottom: 1px solid rgba(192,192,192,0.5);
+  padding: 0;
+  margin: 0;
+
+}
+.add_btn{
+  color: silver;
+}
+.space{
+  padding: 4px;
+}
+.header_div{
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.block1{
+  padding: 8px 0 0 20px ;
+}
+
+.block2{
+  color: #22a4f5;
+  display: block;
+
+}
+.footer{
+  position: relative;
+}

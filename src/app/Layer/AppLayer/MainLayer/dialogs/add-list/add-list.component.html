@@ -1,0 +1,31 @@
+<div class="example-container">
+  <form [formGroup]="formControl">
+    <mat-form-field appearance="fill" class="inpt_topic_name">
+      <input matInput formControlName="topic" placeholder="Название" required >
+    </mat-form-field>
+
+
+    <div>
+      <button mat-raised-button *ngFor="let color of colors"
+              style="width: 10px; height: 10px; background-color: {{color}}"
+              (click)="addColor(color)"
+              [class.active]="selectedColor === color"
+      ></button>
+    </div>
+
+    <button mat-icon-button color="primary" autofocus
+            [disabled]="formControl.invalid || formControl.disabled || !isEmpty()"
+            type="submit"
+            (click)="addTopic()">
+      <mat-icon matSuffix>done</mat-icon>
+      Добавить
+    </button>
+
+    <button mat-icon-button color="warn" class="but2"
+            (click)="outDialog()">
+      <mat-icon matSuffix>clear</mat-icon>
+      Выйти
+    </button>
+
+  </form>
+</div>

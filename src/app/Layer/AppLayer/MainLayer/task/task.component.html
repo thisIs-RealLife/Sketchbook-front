@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-4 menu-tasks" style="height:{{scrHeight - 128}}px">
+
+      <div class="container">
+        <div class="row">
+          <div class="col list">
+            <mat-selection-list class="wrapper_items">
+              <mat-list-item class="head"> Список</mat-list-item>
+            </mat-selection-list>
+            <div class="topic"
+                 [class.active]="selectedTopic === note.topic"
+                 *ngFor="let note of notes"
+                 (click)="selectTopic(note.topic)">
+
+              <div class="add_list plus" >
+                <div class="btn_add_list"  style="color: {{note.color}}"> {{note.topic.toString()}}</div>
+              </div>
+              <div class="edit_list plus" style="color: {{note.color}}">
+                {{getCount(note.topic)}}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8 content-task">
+      <div class="main_table" style="height:{{scrHeight - 128}}px">
+        <ng-template #viewContainerRef></ng-template>
+      </div>
+    </div>
+  </div>
+  <div class="row footer">
+    <div class="col-4 wrapper_add">
+      <div class="add_list" >
+       <div class="btn_add_list" (click)="openAddListDialog()">Добавить список</div>
+      </div>
+      <div class="edit_list">
+        Правка
+      </div>
+    </div>
+    <div class="col-8 wrapper_over">
+      <div class="show_over"> Показать завершенные</div>
+    </div>
+  </div>
+</div>
+

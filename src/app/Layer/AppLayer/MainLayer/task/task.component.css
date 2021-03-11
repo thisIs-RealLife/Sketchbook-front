@@ -1,0 +1,159 @@
+.example-card {
+  max-width: 400px;
+}
+
+.menu-tasks {
+  float: left;
+  background-color: black;
+  color: white;
+}
+
+.row {
+  --bs-gutter-x: none !important;
+}
+
+.container-fluid {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0rem !important;
+}
+
+
+.head {
+  font-size: 20px;
+}
+
+.content-task {
+  float: left;
+  background-color: black;
+  color: white;
+}
+
+
+/* Стили таблицы ............................................................................................................... */
+.main_table {
+  width: 94%;
+  margin-right: 500px;
+  overflow: auto;
+  height: 200px;
+}
+
+.list {
+  margin-left: 10px;
+}
+
+
+mat-list-item {
+  display: block;
+}
+
+
+.topic {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+.count {
+
+  margin-left: 40px;
+}
+
+
+.container-fluid {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0rem !important;
+}
+
+
+.head {
+  border-bottom: 1px solid rgba(192, 192, 192, 0.3);
+  color: white;
+  font-size: 20px;
+}
+
+
+/* Стили таблицы ............................................................................................................... */
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.active {
+  background-color: rgba(192, 192, 192, 0.3);
+}
+
+.wrapper_bottom_items {
+  padding: 0;
+  height: 100% !important;
+}
+
+.menu_bottom {
+
+  background-color: black;
+  color: white;
+  height: 100% !important;
+}
+
+
+.add_list {
+  float: left;
+  display: inline-block;
+  padding: 10px;
+  border-top: 1px solid silver;
+}
+
+.show_over {
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid silver;
+  border-radius: 0 0 10px 10px;
+  width: 94%;
+  color: #22a4f5;
+  background-color: white;
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  font-size: 16px;
+  color: white;
+  height: 64px;
+
+}
+
+.wrapper_add {
+  padding-left: 22px;
+  padding-right: 15px;
+}
+
+.edit_list {
+
+  text-align: end;
+  padding: 10px;
+  width: 100%;
+  border-top: 1px solid silver;
+}
+.plus{
+  border-top: none;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 30px;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.3);
+  height: auto;
+}
+.btn_add_list{
+  height: auto;
+}

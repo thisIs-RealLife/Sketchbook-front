@@ -1,0 +1,5 @@
+mat-spinner{
+  position: relative;
+  z-index: 9999;
+  margin: 0 auto;
+}

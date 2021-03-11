@@ -1,0 +1,13 @@
+.but2{
+  margin-left: 60px;
+}
+.example-container{
+  width: 400px;
+  height: auto;
+}
+.inpt_topic_name{
+  width: 100%;
+}
+.active{
+  height: 30px !important;
+}

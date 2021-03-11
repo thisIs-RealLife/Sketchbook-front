@@ -1,0 +1,41 @@
+
+<table>
+  <tr>
+    <th colspan="2"
+        [style.color]="selectedNote.color !== 'white'? selectedNote.color : 'black'">{{selectedNote.topic}}</th>
+  </tr>
+  <tr>
+    <td colspan="2" class="head_table">
+      <div class="header_div">
+        <div class="block1"><p [style.color]="selectedNote.color !== 'white'? selectedNote.color : 'black'">Количество
+          заметок: 0</p></div>
+        <div class="block2">
+          <button mat-button *ngIf="save" (click)="acceptChanges()"> Сохранить</button>
+          <button mat-button *ngIf="done" (click)="addText(numBtn)"> Готово</button>
+          <button mat-button *ngIf="edit" (click)="allowEdit()"> Изменить</button>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+  <tr class="space">
+    <td class="space"></td>
+    <td></td>
+  </tr>
+
+  <tr *ngFor="let row of numbRowTable; let i = index">
+    <td class="tool_add_btn">
+      <mat-checkbox [(ngModel)]="selectedNote.annotation[i].completed" class="my_checkbox"
+                    *ngIf="numBtn > i"></mat-checkbox>
+      <button mat-icon-button *ngIf="numBtn == i"
+              class="add_btn"
+              (click)="ready()">
+        <mat-icon matSuffix>add</mat-icon>
+      </button>
+    </td>
+    <td class="tool_text">
+      <textarea mat-autosize rows="1px" [disabled]="disableTextArea(i)" [(ngModel)]="text[i]"></textarea>
+    </td>
+  </tr>
+</table>
+

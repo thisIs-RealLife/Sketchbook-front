@@ -1,0 +1,51 @@
+
+  <div class="spinner" *ngIf="formControl.disabled">
+    <app-progress-spinner></app-progress-spinner>
+  </div>
+  <form
+        [formGroup]="formControl"
+        class="example-container">
+    <p>Регистрация</p>
+    <p>
+      <mat-form-field class="example-form-field">
+        <mat-label>Имя</mat-label>
+        <input matInput type="text" formControlName="name">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field class="example-form-field">
+        <mat-label>Фамилия</mat-label>
+        <input matInput type="text" formControlName="surname">
+      </mat-form-field>
+    </p>
+
+    <p>
+      <mat-form-field class="example-form-field">
+        <mat-label>Email</mat-label>
+        <input matInput type="text" formControlName="email">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field class="example-form-field">
+        <mat-label>Пароль</mat-label>
+        <input matInput type="password" formControlName="password">
+      </mat-form-field>
+    </p>
+
+    <button mat-icon-button color="primary"
+            [disabled]="formControl.invalid || formControl.disabled"
+            type="submit"
+            (click)="signUp()">
+      <mat-icon matSuffix>done</mat-icon>
+      Регистрация
+    </button>
+
+    <button mat-icon-button color="warn" class="but2"
+            (click)="outDialog()">
+      <mat-icon matSuffix>clear</mat-icon>
+      Отмена
+    </button>
+
+  </form>
+
+

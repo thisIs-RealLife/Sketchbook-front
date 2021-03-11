@@ -1,0 +1,24 @@
+<!-- The overlay -->
+<div id="myNav" class="overlay" [style.height]="sideNavFlag ? '100%' : '0'">
+
+  <!-- Button to close the overlay navigation -->
+  <button mat-icon-button style="color: white" class="close_btn" (click)="closeNav()">
+    <mat-icon>close</mat-icon>
+  </button>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <div class="container-fluid">
+      <div class="row menu">
+          <div class="notes_icon menu_icons" (click)="openTasks()">
+            <img class="notes_icon" src="assets/notes.png">
+          </div>
+          <div class="notes_icon menu_icons">
+            <img class="message_icon" src="assets/email.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
